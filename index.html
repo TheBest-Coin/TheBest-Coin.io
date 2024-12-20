@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سیستم رفرال</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #referralLink {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    
-    <div class="container">
-        <h1> The B-Coin reflink</h1>
-        <h1>موجودی سکه‌های شما:</h1>
-        <div id="coinCount">0</div>
-        <button id="generateLink">تولید لینک رفرال</button>
-        <div id="referralLinkContainer" style="display: none;">
-            <h2>لینک رفرال شما:</h2>
-            <input type="text" id="referralLink" readonly>
-        </div>
-    </div>
-    <script src="main.js"></script>
+    <h1>سیستم رفرال</h1>
+    <button id="generateLink">تولید لینک رفرال</button>
+    <div id="referralLink"></div>
+
+    <script>
+        // تولید لینک رفرال
+        document.getElementById('generateLink').addEventListener('click', function() {
+            const randomId = Math.random().toString(36).substring(2, 15);
+            const referralLink = `https://t.me/TheBestCoinBot?ref=${randomId}`;
+            document.getElementById('referralLink').innerHTML = `<a href="${referralLink}" target="_blank">${referralLink}</a>`;
+        });
+
+        // بررسی لینک رفرال
+        const urlParams = new URLSearchParams(window.location.search);
+        const refId = urlParams.get('ref');
+        if (refId) {
+            alert('شما با موفقیت از طریق لینک رفرال وارد شدید!');
+            // در اینجا می‌توانید هر عملی که می‌خواهید انجام دهید
+        }
+    </script>
 </body>
 </html>

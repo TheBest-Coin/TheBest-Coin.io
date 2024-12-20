@@ -1,5 +1,5 @@
 // شناسه کاربر
-const userId = 'user123'; // شناسه منحصر به فرد کاربر
+const userId = 'user1234'; // شناسه منحصر به فرد کاربر
 
 // تابع برای ذخیره موجودی سکه
 function setCoins(userId, coins) {

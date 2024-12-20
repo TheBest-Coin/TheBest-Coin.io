@@ -13,7 +13,7 @@ function getCoins(userId) {
 
 // تابع برای تولید لینک رفرال
 function generateReferralLink() {
-    const referralLink = `https://thebest-coin.github.io/TheBest-Coin.io?ref=${userId}`;
+    const referralLink = `https://t.me/TheBestCoinBot?ref=${userId}`;
     document.getElementById('referralLink').value = referralLink;
     document.getElementById('referralLinkContainer').style.display = 'block';
 }

@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best-Coin</title>
-    <script src='//niphaumeenses.net/vignette.min.js' data-zone='8631876' data-sdk='show_8631876'></script>
+    <title>سیستم رفرال</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>The BestCoin Coming ...</p>
-
-    <script>
-        
-show_8631876().then(() => {
-    // You need to add your user reward function here, which will be executed after the user watches the ad.
-    // For more details, please refer to the detailed instructions.
-    alert('You have seen ad ad!');
-})
-        
-    </script>
+    <div class="container">
+        <h1>موجودی سکه‌های شما:</h1>
+        <div id="coinCount">0</div>
+        <button id="generateLink">تولید لینک رفرال</button>
+        <div id="referralLinkContainer" style="display: none;">
+            <h2>لینک رفرال شما:</h2>
+            <input type="text" id="referralLink" readonly>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

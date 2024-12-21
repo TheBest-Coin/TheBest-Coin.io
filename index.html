@@ -24,8 +24,8 @@
         // تولید لینک رفرال
         document.getElementById('generateLink').addEventListener('click', function() {
             const randomId = Math.random().toString(36).substring(2, 15);
-            const referralLink = `https://t.me/TheBestCoinBot?ref=${randomId}`;
-            document.getElementById('referralLink').innerHTML = `<a href="${referralLink}" target="_blank">${referralLink}</a>`;
+            const referralLink = `https://t.me/share/url?url=https://t.me/TheBestCoinBot?ref=${randomId}`;
+            document.getElementById('referralLink').innerHTML = `<a href="${referralLink}" target="_blank">Share the referral cod</a>`;
         });
 
         // بررسی لینک رفرال

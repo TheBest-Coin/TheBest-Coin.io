@@ -40,7 +40,7 @@ body, html{
 }
 .vip-h h2{
     font-size: 2rem;
-    color: silver;
+    color: gold;
 }
 .shop-h{
     display: flex;
@@ -125,6 +125,7 @@ body, html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: -2rem;
 }
 
 
@@ -138,8 +139,7 @@ body, html{
 .container{
     display: flex;
     flex-direction: row;
-    margin-top: -4rem;
-    /* background-color: aqua; */
+    margin-top: -22rem;
 }
 
 .friend-btn{

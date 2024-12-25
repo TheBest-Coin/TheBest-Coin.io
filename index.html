@@ -3,38 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سیستم رفرال</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        #referralLink {
-            margin: 20px 0;
-        }
-    </style>
+    <title>صفحه لودینگ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>سیستم رفرال</h1>
-    <button id="generateLink">تولید لینک رفرال</button>
-    <div id="referralLink"></div>
+    <div id="loading-screen">
+        <h1>در حال بارگذاری...</h1>
+    </div>
+    <div id="main-content" style="display: none;">
+        <h1>خوش آمدید به وب‌سایت من!</h1>
+        <p>این محتوا پس از بارگذاری کامل نمایش داده می‌شود.</p>
+        <!-- محتوای اصلی سایت شما اینجا قرار می‌گیرد -->
+        <h1>loding complete</h1>
+    </div>
 
-    <script>
-        // تولید لینک رفرال
-        document.getElementById('generateLink').addEventListener('click', function() {
-            const randomId = Math.random().toString(36).substring(2, 15);
-            const referralLink = `https://t.me/share/url?url=https://t.me/TheBestCoinBot?ref=${randomId}`;
-            document.getElementById('referralLink').innerHTML = `<a href="${referralLink}" target="_blank">Share the referral cod</a>`;
-        });
-
-        // بررسی لینک رفرال
-        const urlParams = new URLSearchParams(window.location.search);
-        const refId = urlParams.get('ref');
-        if (refId) {
-            alert('شما با موفقیت از طریق لینک رفرال وارد شدید!');
-            // در اینجا می‌توانید هر عملی که می‌خواهید انجام دهید
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

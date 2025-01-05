@@ -26,6 +26,19 @@
     <h1>مقادیر Local Storage</h1>
     <button id="showLocalStorage">نمایش مقادیر Local Storage</button>
 
+
+        <h1>مثال جستجو</h1>
+    <p>این یک متن نمونه است که شامل مقدار 492 می‌باشد.</p>
+    <p>این یک متن دیگر است که شامل مقدار 492.00 می‌باشد.</p>
+    <button onclick="searchValues()">جستجو</button>
+
+
+
+
+
+
+
+    
     <script>
         function displayLocalStorage() {
       let storageData = '';
@@ -45,6 +58,35 @@
 
       // افزودن رویداد کلیک به دکمه
     document.getElementById('showLocalStorage').addEventListener('click', displayLocalStorage);
+
+
+
+
+
+        function searchValues() {
+            // مقادیر مورد نظر
+            const searchValues = ['492', '492.00'];
+            let foundItems = [];
+
+            // جستجو در تمام عناصر صفحه
+            const elements = document.body.getElementsByTagName('*');
+            for (let element of elements) {
+                if (element.innerText) {
+                    searchValues.forEach(value => {
+                        if (element.innerText.includes(value)) {
+                            foundItems.push(`نام عنصر: ${element.tagName}, مقدار: ${element.innerText}`);
+                        }
+                    });
+                }
+            }
+
+            // نمایش نتایج
+            if (foundItems.length > 0) {
+                alert(foundItems.join('\n'));
+            } else {
+                alert('مقدار مورد نظر پیدا نشد.');
+            }
+        }
     
     </script>
 </body>

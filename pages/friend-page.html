@@ -14,28 +14,10 @@
               pubId: "953460",
               appId: "1164",
             });
+
+              
           </script>
-    <script>
-        // تابعی برای نمایش مقادیر Local Storage
-function displayLocalStorage() {
-    let storageData = '';
-
-    // دریافت کلیدها و مقادیر Local Storage
-    for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        const value = localStorage.getItem(key);
-        
-        // اضافه کردن کلید و مقدار به رشته
-        storageData += `${key}: ${value}\n`;
-    }
-
-    // نمایش داده‌ها در alert
-    alert(storageData);
-}
-
-// افزودن رویداد کلیک به دکمه
-document.getElementById('showLocalStorage').addEventListener('click', displayLocalStorage);
-    </script>
+    
     
     <script src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=953460&siteid=null" async></script>
 </head>
@@ -44,5 +26,26 @@ document.getElementById('showLocalStorage').addEventListener('click', displayLoc
     <h1>مقادیر Local Storage</h1>
     <button id="showLocalStorage">نمایش مقادیر Local Storage</button>
 
+    <script>
+        function displayLocalStorage() {
+      let storageData = '';
+
+        // دریافت کلیدها و مقادیر Local Storage
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        
+        // اضافه کردن کلید و مقدار به رشته
+        storageData += `${key}: ${value}\n`;
+    }
+
+        // نمایش داده‌ها در alert
+    alert(storageData);
+    }
+
+      // افزودن رویداد کلیک به دکمه
+    document.getElementById('showLocalStorage').addEventListener('click', displayLocalStorage);
+    
+    </script>
 </body>
 </html>

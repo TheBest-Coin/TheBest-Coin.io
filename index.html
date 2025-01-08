@@ -11,12 +11,30 @@
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
           <script src="https://richinfo.co/richpartners/telegram/js/tg-ob.js"></script>
           <script>
-            window.TelegramAdsController = new TelegramAdsController();
+              // راه‌اندازی کنترلر تبلیغات
+        window.TelegramAdsController = new TelegramAdsController();
             window.TelegramAdsController.initialize({
               pubId: "953460",
-              appId: "1120",
-                
+              appId: "1120",     // اختیاری: فعال‌سازی حالت اشکال‌زدایی
+        });
+
+        // تنظیم هندلر رویداد برای دکمه
+        const button = document.getElementById('ad-button');
+        button?.addEventListener('click', () => {
+            window.TelegramAdsController.triggerNativeNotification().then((result) => {
+                // مدیریت کلیک بر روی تبلیغ
+                console.log("تبلیغ با موفقیت نمایش داده شد:", result);
+            }).catch((result) => {
+                // مدیریت خطا یا عدم وجود تبلیغ
+                console.error("خطا در نمایش تبلیغ:", result);
+                alert(result);
             });
+        });
+
+              
+            
+                
+            
           </script≥
           <script>
             window.TelegramAdsController = new TelegramAdsController();
@@ -67,6 +85,7 @@
                 </div>
                 <div>
                     <h2 class="balanc"> <img class="b-coin-" src="./styles/pics/B-Coin.png" alt="">1,258,642</h2>
+                    <button id="ad-button">نمایش تبلیغ</button>
                 </div>
             </div>
             <div class="B-Icon">

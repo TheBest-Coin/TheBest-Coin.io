@@ -2,10 +2,227 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best-Coin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Battery Charger</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <style>
+    body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #000002;
+    transition: all 0s;
+}
+.sec{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.back-btn-btn{
+    background-color: cyan;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    border: 3px solid rgb(88, 255, 255);
+    box-shadow: 0px 0px 15px rgb(88, 255, 255);
+    transition: 0.4s;
+
+}
+.back-btn-btn:active{
+    background-color: rgb(88, 255, 255);
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.75rem;
+    margin-left: -0.50rem;
+    border: 3px solid rgb(88, 255, 255);
+    box-shadow: 0px 0px 15px rgb(88, 255, 255);
+}
+/* charger-section */
+.sec-ch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: -30rem;
+}
+.btn-chrger{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    background:yellow;
+    border: 0.2rem solid gold;
+    box-shadow: 0rem 0rem 5rem gold;
+    transition: 0.4s;
+}
+.btn-chrger:active{
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border: 0.2rem solid white;
+    background-color: #fff;
+    box-shadow: 0rem 0rem 5rem white;
+    box-shadow: 0rem 0rem 5rem white;
+}
+.svg-charg{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    color: rgb(255, 255, 255);
+    height: 4rem;
+    width: 4rem;
+    filter: drop-shadow(0px 0px 5px rgb(191, 255, 255));
+}
+/* display-section */
+.display-mod-div-div{
+    width: 20rem;
+    height: 9rem;
+    background:rgba(0, 255, 255, 0.455);
+    border: 0.2rem solid cyan;
+    box-shadow: 0rem 0rem 4rem cyan;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+}
+.row-mod{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+.display-mod-div p{
+    margin-left: 1rem;
+}
+.cyan-btn-refresh{
+    width: 9rem;
+    height: 2.5rem;
+    border: 0.2rem solid rgb(0, 255, 255);
+    background-color: rgba(0, 255, 255, 0.498);
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    color: black;
+    font-size: 1.1rem;
+    font-family:system-ui;
+}
+.cyan-btn-yes{
+    width: 9rem;
+    height: 2.5rem;
+    border: 0.2rem solid cyan;
+    background-color: rgba(0, 255, 255, 0.498);
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    color: black;
+    font-size: 1.1rem;
+    font-family:system-ui;
+}
+.display-mod-div p{
+    font-family:system-ui;
+}
+/* claim-Section */
+.sec-cl div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-top: -3rem;
+
+}
+
+/* true-btn */
+/* .claim-btn{
+    color: #fff;
+    width: 8rem;
+    height: 3.5rem;
+    font-size: larger;
+    border: 0.2rem solid rgba(77, 255, 0, 0.65);
+    background-color: rgba(77, 255, 0, 0.42);
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0rem 4rem rgb(77, 255, 0);
+    transition: 1s;
+} */
+
+
+/* false-btn */
+.claim-btn{
+    color: #fff;
+    width: 8rem;
+    height: 3.5rem;
+    font-size: larger;
+    border: 0.2rem solid rgba(75, 75, 75, 0.65);
+    background-color: rgba(75, 75, 75, 0.346);
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0rem 4rem rgba(75, 75, 75, 0.65);
+    transition: 1s;
+}
+.claim-btn:active{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    width: 7.5rem;
+    height: 3rem;
+    font-size: larger;
+    border: 0.2rem solid rgba(77, 255, 0, 0.65);
+    background-color: rgba(77, 255, 0, 0.42);
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0rem 4rem rgb(77, 255, 0);
+
+}
+</style>
 </head>
 <body>
-    <h1>Chaleng Page comming soon...</h1>
+    <section class="sec">
+        <section class="sec-h">
+            <div class="back-btn-div">
+                <a href="#">
+                    <button class="back-btn-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 14 14">
+                            <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                            <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                          </svg>
+                    </button>
+                </a>
+            </div>
+        </section>
+        <section class="sec-ch">
+            <div class="Charge-div">
+                <button class="btn-chrger"><svg class="svg-charg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-battery-charging" viewBox="0 0 16 16">
+                    <path d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z"/>
+                    <path d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"/>
+                    <path d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+                    <path d="M12 10h-1.783l1.542-1.639q.146-.156.241-.34zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646M16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8"/>
+                  </svg></button>
+            </div>
+        </section>
+        <section class="display-mod-div-div">
+            <div class="display-mod-div">
+                <p>The battery charge is not available.Please refresh the page or try another page.</p>
+                <div class="row-mod">
+                 <input type="submit" class="cyan-btn-yes" value="Next page" class="yesy-btn">
+                 <input type="submit" class="cyan-btn-refresh" value="Refresh" class="refresh-btn">
+                </div>
+            </div>
+        </section>
+        <section class="sec-cl">
+            <div>
+                <input type="submit" class="claim-btn" value="claim" class="claim-btn">
+            </div>
+        </section>
+    </section>
 </body>
 </html>

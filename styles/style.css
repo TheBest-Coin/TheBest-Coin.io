@@ -24,6 +24,8 @@ body, html{
 }
 /* header */
 .sec1-h{
+    width: 100%;
+    height: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,9 +37,10 @@ body, html{
 .Rcoin-Pic{
     display: flex;
     flex-direction: row;
-    margin-top: -0.3rem;
-    width: 3rem;
-    height: 3rem;
+    margin-top: 0.2rem;
+    margin-left: 0.3rem;
+    width: 2rem;
+    height:2rem;
 }
 .Div_P_Rcoin{
     width: 100%;
@@ -50,7 +53,6 @@ body, html{
     align-items: center;
 }
 .P-Rcoin{
-    margin-right: 1rem;
     color: #fff;
     font-family:cursive;
 }
@@ -59,7 +61,7 @@ body, html{
     flex-direction: row;
     width: 25%;
     height: 2.3rem;
-    border-radius: 80rem;
+    border-radius: 0.8rem;
     margin-right: 1rem;
     border: 0.15rem solid cyan;
     box-shadow: 0rem 0rem 7rem rgba(0, 255, 255, 0.289) inset;
@@ -70,6 +72,7 @@ body, html{
 .vip-h h2{
     font-size: 2rem;
     color: silver;
+    text-shadow: 0rem 0rem 1rem cyan;
 }
 
 
@@ -88,10 +91,17 @@ body, html{
     align-items: center;
 }
 .b-coin-{
-    width: 3rem;
-    height: 3rem;
-    margin-right: 1rem;
-    margin-top: 0.3rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2rem;
+    margin-left: -2rem;
+}
+.V-Pic{
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .icon{
@@ -108,7 +118,6 @@ body, html{
     display: flex;
     flex-direction: row;
     margin-left: 0.3rem;
-    
 }
 
 .icon:active{
@@ -166,11 +175,21 @@ body, html{
     flex-direction: row;
     align-items: end;
     justify-content: center;
+    
 }
 .container{
+    width: 100%;
+    height: 3.5rem;
+    padding-top: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem ;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin-top: -22rem;
+    border: 0.15rem solid cyan;
+    box-shadow: 0rem 0rem 7rem rgba(0, 255, 255, 0.289) inset;
+
 }
 
 .friend-btn{
@@ -189,8 +208,11 @@ body, html{
     filter: drop-shadow(0px 0px 30px  rgba(255, 255, 255, 0.679));
 }
 .tv-btn{
-    width: 5rem;
-    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: -1em;
+    width: 3.5rem;
+    height: 3.5rem;
     filter: drop-shadow(0px 0px 20px  #7b00ff);
 }
 .todo-btn{

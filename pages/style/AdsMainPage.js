@@ -24,7 +24,6 @@ button?.addEventListener('click', () => {
             window.location.href = "./tv-page2.html";
         });
         styleBtn.addEventListener('click',()=>{
-            console.log("Claim Btn was Click");
             window.location.href = "../index.html";
         });
 

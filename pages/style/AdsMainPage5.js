@@ -10,7 +10,7 @@ let NextPage = document.getElementById('NextPage');
 
 const button = document.getElementById('ad-button')
 button?.addEventListener('click', () => {
-    // window.TelegramAdsController.triggerNativeNotification().then((result) => {
+    window.TelegramAdsController.triggerNativeNotification().then((result) => {
 
         Charg +=20;
         Rcoin +=1;
@@ -29,11 +29,11 @@ button?.addEventListener('click', () => {
         });
 
 
-    // }).catch((result) => {
+    }).catch((result) => {
 
         MenuDisplay.style.display="flex";
 
-    // });
+    });
 });
 
 function refreshAdpage(){

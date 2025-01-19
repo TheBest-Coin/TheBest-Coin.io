@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best-Coin</title>
+    <link rel="stylesheet" href="./style/AdsStylePage.css">
+
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <script src="https://richinfo.co/richpartners/telegram/js/tg-ob.js"></script>
+    <script>
+        window.TelegramAdsController = new TelegramAdsController();
+        window.TelegramAdsController.initialize({
+            pubId: "953460",
+            appId: "1120",
+        });
+    </script>
+</head>
+<body>
+    <section class="sec">
+        <section class="sec-h" id="BackBtn">
+            <div class="back-btn-div" id="BackBtn" >
+                <!-- <a href="../index.html" id="BackBtn">
+                    <button class="back-btn-btn" id="BackBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-double-left" viewBox="0 0 14 14">
+                            <path fill-rule="evenodd"
+                                d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                            <path fill-rule="evenodd"
+                                d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        </svg>
+                    </button>
+                </a> -->
+            </div>
+        </section>
+        <section class="sec-ch">
+            <div class="Charge-div">
+                <button class="btn-chrger" id="ad-button"><svg class="svg-charg" xmlns="http://www.w3.org/2000/svg"
+                        width="30" height="30" fill="currentColor" class="bi bi-battery-charging" viewBox="0 0 16 16">
+                        <path
+                            d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z" />
+                        <path
+                            d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
+                        <path
+                            d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+                        <path
+                            d="M12 10h-1.783l1.542-1.639q.146-.156.241-.34zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646M16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8" />
+                    </svg></button>
+            </div>
+        </section>
+        <section class="display-mod-div-div" id="dis-none">
+            <div class="display-mod-div">
+                <p>The battery charge is not available.Please refresh the page or try another page.</p>
+                <div class="row-mod">
+                    <input type="submit" class="cyan-btn-yes" value="Next page" id="NextPage" class="yesy-btn">
+                    <input type="submit" class="cyan-btn-refresh" onclick="refreshAdpage()" value="Home" class="refresh-btn">
+                </div>
+            </div>
+        </section>
+        <section class="sec-cl">
+            <div>
+                <input type="submit" id="claim-btn-green" class="claim-btn" value="claim" >
+            </div>
+        </section>
+    </section>
+
+    <script src="./style/AdsMainPage5.js"></script>
+</body>
+</html>

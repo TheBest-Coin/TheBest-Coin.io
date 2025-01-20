@@ -17,22 +17,19 @@ button?.addEventListener('click', () => {
 
         localStorage.setItem("Charg",Charg);
         localStorage.setItem("Rcoin",Rcoin);
-        console.log(Rcoin);
-
-        styleBtn.className ="GreenClaimButton";
-        NextPage.addEventListener("click", () =>{
-            window.location.href = "./tv-page2.html";
-        });
-        styleBtn.addEventListener('click',()=>{
-            window.location.href = "../index.html";
-        });
-
 
     }).catch((result) => {
 
         MenuDisplay.style.display="flex";
 
     });
+});
+styleBtn.className ="GreenClaimButton";
+NextPage.addEventListener("click", () =>{
+        window.location.href = "./tv-page2.html";
+});
+styleBtn.addEventListener('click',()=>{
+        window.location.href = "../index.html";
 });
 
 function refreshAdpage(){

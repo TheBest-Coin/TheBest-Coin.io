@@ -1,3 +1,9 @@
+window.TelegramAdsController = new TelegramAdsController();
+window.TelegramAdsController.initialize({
+            pubId: "953460",
+            appId: "1187",
+});
+
 // let BcoinBalance = localStorage.getItem("BestCoinBalance");
 let Charg = parseInt(localStorage.getItem("Charg")) || 0;
 let Rcoin = parseInt(localStorage.getItem("Rcoin")) || 0;

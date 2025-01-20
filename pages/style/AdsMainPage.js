@@ -1,8 +1,3 @@
-window.TelegramAdsController = new TelegramAdsController();
-window.TelegramAdsController.initialize({
-            pubId: "953460",
-            appId: "1187",
-});
 
 // let BcoinBalance = localStorage.getItem("BestCoinBalance");
 let Charg = parseInt(localStorage.getItem("Charg")) || 0;
@@ -23,6 +18,7 @@ button?.addEventListener('click', () => {
 
         localStorage.setItem("Charg",Charg);
         localStorage.setItem("Rcoin",Rcoin);
+        styleBtn.className ="GreenClaimButton";
 
     }).catch((result) => {
 
@@ -30,7 +26,7 @@ button?.addEventListener('click', () => {
 
     });
 });
-styleBtn.className ="GreenClaimButton";
+
 NextPage.addEventListener("click", () =>{
         window.location.href = "./tv-page2.html";
 });

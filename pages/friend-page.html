@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Best-Coin</title>
+    <link rel="stylesheet" href="./style/friend.css">
+    <style>
+        body, html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #000022;
+}
+.main-sec{
+  background-color: #000022;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec1-h{
+  width: 100%;
+  height: 5rem;
+}
+.Back-Btn{
+  color: cyan;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  margin-top: 0.4rem;
+  margin-left: 1rem;
+  transition: 0.6s;
+  background-color: rgba(0, 255, 255, 0.139);
+  border-color: cyan;
+  border-style: none;
+  box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.663) inset;
+}
+.Back-Btn:active{
+  margin-left: -0.5rem;
+}
+.sec2-m{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48%;
+}
+.span-div{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-style:none;
+  box-shadow: 1px 1px 10px 1px black inset;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+}
+
+.linka{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  transition: 0.3s;
+}
+.Friend-Pic{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  box-shadow: 0rem 0.3rem 1.5rem 2px cyan;
+}
+
+.sec3-f{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Code-Generator{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  width: 15rem;
+  background-color: rgba(0, 255, 255, 0.141);
+  border-radius: 1rem;
+  border-style: none;
+  transition: 0.5s;
+  box-shadow: 0px 0px 4px 2px rgba(0, 255, 255, 0.663);
+
+}
+.Code-Generator:active{
+  height: 2.5rem;
+  width: 14.5rem;
+display: flex;
+flex-direction: row;
+margin-top: -2rem;
+}
+    </style>
 </head>
+
 <body>
-    <h1>Friend Page Comming soon...</h1>
+    <section class="main-sec">
+        <!-- header -->
+        <section class="sec1-h">
+            <button class="Back-Btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-chevron-double-left" viewBox="0 0 14 14">
+                    <path fill-rule="evenodd"
+                        d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0">
+                    </path>
+                    <path fill-rule="evenodd"
+                        d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0">
+                    </path>
+                </svg></button>
+
+        </section>
+
+        <!-- main -->
+        <section class="sec2-m">
+            <img class="Friend-Pic" id="pic-par" src="./style/pic/Friend.jpeg" alt="friend image">
+            <div class="span-div"><span id="ref-view"></span></div>
+        </section>
+
+        <!-- footer -->
+        <section class="sec3-f">
+            <input type="submit" value="Create invitation link" id="ref-Gen" class="Code-Generator">
+        </section>
+
+    </section>
+
+    <script>
+
+
+        document.getElementById("ref-Gen").addEventListener('click', function () {
+            const randomid = Math.random().toString(36).substring(2, 15);
+            const referralLink = `https://t.me/share/url?url=https://t.me/TheBestCoin?ref=${randomid}`;
+            document.getElementById("ref-view").innerHTML = `<a class="linka" href="${referralLink}" target="_blank">Click to invite your friends</a>`
+
+        })
+    </script>
+    <script src="./style/friend.js"></script>
 </body>
+
 </html>

@@ -151,9 +151,11 @@ margin-top: -2rem;
 
         
 
+
+
 document.getElementById("ref-Gen").addEventListener('click',function(){
   const randomid = Math.random().toString(36).substring(2,15);
-  const referralLink = `https://t.me/share/url?url=https://t.me/TheBestCoinBot?ref=${randomid}`;
+  const referralLink = `https://t.me/share/url?url=https://t.me/TheBestCoinBot/?start=true&/id=${randomid}`;
   window.location.href= `${referralLink} `;
 
 })

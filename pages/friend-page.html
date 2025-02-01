@@ -149,12 +149,14 @@ margin-top: -2rem;
     <script>
 
 
-        document.getElementById("ref-Gen").addEventListener('click', function () {
-            const randomid = Math.random().toString(36).substring(2, 15);
-            const referralLink = `https://t.me/share/url?url=https://t.me/TheBestCoin?ref=${randomid}`;
-            document.getElementById("ref-view").innerHTML = `<a class="linka" href="${referralLink}" target="_blank">Click to invite your friends</a>`
+        
 
-        })
+document.getElementById("ref-Gen").addEventListener('click',function(){
+  const randomid = Math.random().toString(36).substring(2,15);
+  const referralLink = `https://t.me/share/url?url=https://t.me/TheBestCoinBot?ref=${randomid}`;
+  window.location.href= `${referralLink} `;
+
+})
     </script>
     <script src="./style/friend.js"></script>
 </body>

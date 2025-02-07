@@ -1,0 +1,208 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #000022;
+}
+.GreenBtn{
+    background-color: greenyellow;border-radius: 0.3rem;border: none;display: flex;
+    flex-direction: row;margin-top: 0.9rem;width: 2.8rem;height: 1.3rem;
+}
+.GrayBtn{
+    background-color: gray;border-radius: 0.3rem;border: none;display: flex;
+    flex-direction: row;margin-top: 0.9rem;width: 2.8rem;height: 1.3rem;
+}
+.main-sec{
+    width: 100%;
+    height: 100%;
+}
+.Back-Btn{
+    color: cyan;
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+    transition: 0.6s;
+    background-color: rgba(0, 255, 255, 0.139);
+    border-color: cyan;
+    border-style: none;
+    box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.663) inset;
+}
+.Back-Btn:active{
+    margin-left: -0.5rem;
+}
+
+/* main */
+.sec-2{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-p-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+    height: 2rem;
+}
+.Games-P{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    color: white;
+}
+.games{
+    width: 80%;
+    height: 7rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.139);
+    border-color: cyan;
+    border-style: none;
+    box-shadow: 0px 0px 8px 4px rgba(0, 255, 255, 0.663) inset;
+
+}
+.CandelGamePic{
+    pointer-events: none;
+    filter: blur(0.9px);
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    width: 7rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+}
+.Com-S{
+    font-size: 0.5rem;
+    color: cyan;
+}
+/* .PochGame{
+    box-shadow: 0px 0px 8px 4px rgba(0, 255, 255, 0.663) inset;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    width: 7rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+
+} */
+.PochGame{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px 4px rgba(0, 255, 255, 0.663) inset;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    width: 7rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+
+}
+.P-Q{
+    color: white;
+    font-size: 2rem;
+
+}
+/* 
+.PochGame{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    width: 7rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+
+} */
+.noclick{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+/* main-sec2 */
+
+.sec-3{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p-chal-div{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 2rem;
+}
+.Chaleng-P{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.7rem;
+    color: white;
+    font-size: 1rem;
+}
+.Challengs-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border-radius: 0.8rem;
+    background-color: rgba(0, 255, 255, 0.139);
+    border-color: cyan;
+    border-style: none;
+    box-shadow: 0px 0px 8px 4px rgba(0, 255, 255, 0.663) inset;
+}
+.Challeng-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 90%;
+    height: 3rem;
+    box-shadow: 0px 0px 0px 2px cyan inset;
+    background-color: rgba(0, 255, 255, 0.387);
+    border-radius: 0.8rem;
+}
+.Caleng-P-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(84, 255, 255);
+}
+.PLus-10{
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.8rem;
+    margin-left: 0.1rem;
+    font-size: 0.7rem;
+    color: greenyellow;
+}
+.a-100-Gift{
+    color: aqua;
+}
+.p-Bin{
+    color: aqua;
+}
+.B-Coin-Value{
+    color: aqua;
+}

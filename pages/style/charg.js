@@ -12,12 +12,12 @@ let chargVal = localStorage.getItem('plusValue')
 pluserpar.innerText=chargVal;
 
 BtnShoed?.addEventListener('click', ()=>{
-//    window.TelegramAdsController.triggerNativeNotification().then((result) =>{
+    window.TelegramAdsController.triggerNativeNotification().then((result) =>{
     B++;
     LocalR = localStorage.setItem("Rcoin",B);
     plusValue += 15;
     localStorage.setItem('plusValue',plusValue);
     pluserpar.innerText=plusValue;
-//    }).catch((result)=>{
- //   });
+    }).catch((result)=>{
+    });
 });

@@ -10,7 +10,6 @@ document.getElementById('BackBtn').addEventListener('click',()=>{
 let BtnShoed = document.getElementById('Pluser')
 let chargVal = localStorage.getItem('plusValue')
 pluserpar.innerText=chargVal;
-
 BtnShoed?.addEventListener('click', ()=>{
     window.TelegramAdsController.triggerNativeNotification().then((result) =>{
     B++;

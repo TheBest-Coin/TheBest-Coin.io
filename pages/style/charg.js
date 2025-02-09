@@ -7,7 +7,7 @@ document.getElementById('BackBtn').addEventListener('click',()=>{
     window.location.href="../index.html";
 });
 
-let BtnShoed = document.getElementById('Pluser')
+let BtnShoed = document.getElementById('Pluser2')
 let chargVal = localStorage.getItem('plusValue')
 pluserpar.innerText=chargVal;
 BtnShoed?.addEventListener('click', ()=>{

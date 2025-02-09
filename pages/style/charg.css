@@ -17,6 +17,27 @@ body, html{
     background-color: #000022;
 
 }
+.ekh-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 50%;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 255, 255, 0.144);
+    border-color: orange;
+    border-style: none;
+    box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.468) inset;
+}
+.ekh-p{
+    color: white;
+}
+.tls-tunnel-a{
+    color: yellow;
+}
 .noclick{
     user-select: none;
     -webkit-user-select: none;
@@ -46,27 +67,7 @@ body, html{
 .Back-Btn:active{
     margin-left: -0.5rem;
 }
-.ekh-div{
-    display: flex;
-    flex-direction: row;
-    margin-top: 0.4rem;
-    margin-left: 1rem;
-    align-items: center;
-    justify-content: center;
-    width: 16rem;
-    height: 50%;
-    border-radius: 0.5rem;
-    background-color: rgba(0, 255, 255, 0.144);
-    border-color: orange;
-    border-style: none;
-    box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.468) inset;
-}
-.ekh-p{
-    color: white;
-}
-.tls-tunnel-a{
-    color: yellow;
-}
+
 .sec-2-ch{
     display: flex;
     flex-direction: column;

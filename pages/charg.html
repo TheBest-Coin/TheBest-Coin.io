@@ -83,6 +83,24 @@ BtnShoed?.addEventListener('click', ()=>{
      }).catch((result)=>{
      });
 });
+
+
+        let hallow = document.getElementById("Pluser");
+      document.getElementById("Pluser").addEventListener("click", function() {
+        var button = this;
+
+        
+        button.style.pointerEvents = "none"
+        var image = document.getElementById('Plus-Rcoin2');
+        image.classList.add('faded');
+        
+        
+        setTimeout(function() {
+            
+            button.style.pointerEvents = "auto";
+          image.classList.remove('faded'); 
+            }, 5000);
+    });
     </script>
 </body>
 

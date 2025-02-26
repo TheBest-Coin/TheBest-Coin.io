@@ -62,8 +62,8 @@
     <!-- <script src="../styles/main-ad.js"></script> -->
     <!-- <script src="./style/charg.js"></script> -->
     <script>
-     //   const AdController = window.Adsgram.init({ blockId: "8441" });
-          const AdController = window.Adsgram.init({ blockId: "int-8548" });
+        const AdController = window.Adsgram.init({ blockId: "8441" });
+        const iAdController = window.Adsgram.init({ blockId: "int-8548" });
         let B = localStorage.getItem('Rcoin');
 let pluserpar = document.getElementById('pluser-pareghraph');
 let spanplusvale = document.getElementById('plus-s');
@@ -87,29 +87,24 @@ BtnShoed?.addEventListener('click', ()=>{
         localStorage.setItem('plusValue',plusValue);
         pluserpar.innerText=plusValue;
   }).catch((result)=>{
-        AdController.show().then((result) => {
-                 alert("ads show")
-                // user watch ad till the end or close it in interstitial format
-                // your code to reward user for rewarded format
-             }).catch((result) => {
-                 alert("ads cant show")
-                // user get error during playing ad
-                // do nothing or whatever you want
-             })
-
-         
-       //  AdController.show().then((result) => {
-    
+         AdController.show().then((result) => {
         //B++;
        // LocalR = localStorage.setItem("Rcoin",B);
     
-         //  plusValue += 3;
-      //  localStorage.setItem('plusValue',plusValue);
-      //  pluserpar.innerText=plusValue;
-       //}).catch((result) => {
+           plusValue += 3;
+           localStorage.setItem('plusValue',plusValue);
+           pluserpar.innerText=plusValue;
+       }).catch((result) => {
+             iAdController.show().then((result) => {
+                   plusValue += 2;
+                   localStorage.setItem('plusValue',plusValue);
+                   pluserpar.innerText=plusValue;
+               }).catch((result) => {
+
+               })
         
     
-     //  })
+       })
     
  });
 });

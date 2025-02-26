@@ -76,32 +76,29 @@ let BtnShoed = document.getElementById('Pluser')
 let chargVal = localStorage.getItem('plusValue')
 pluserpar.innerText=chargVal;
 
-BtnShoed?.addEventListener('click', ()=>{
 
-    AdController.show().then((result) => {
+    
+BtnShoed?.addEventListener('click', ()=>{
+     window.TelegramAdsController.triggerNativeNotification().then((result) =>{
+        B++;
+        LocalR = localStorage.setItem("Rcoin",B);
+        plusValue += 15;
+        localStorage.setItem('plusValue',plusValue);
+        pluserpar.innerText=plusValue;
+  }).catch((result)=>{
+         AdController.show().then((result) => {
         alert("ads show")
         B++;
         LocalR = localStorage.setItem("Rcoin",B);
         plusValue += 3;
         localStorage.setItem('plusValue',plusValue);
         pluserpar.innerText=plusValue;
-        
-    // user watch ad till the end or close it in interstitial format
-    // your code to reward user for rewarded format
 }).catch((result) => {
         
-    // user get error during playing ad
-    // do nothing or whatever you want
-})
     
-    // window.TelegramAdsController.triggerNativeNotification().then((result) =>{
-   // B++;
-    //LocalR = localStorage.setItem("Rcoin",B);
-   // plusValue += 15;
-   // localStorage.setItem('plusValue',plusValue);
-   // pluserpar.innerText=plusValue;
-   //  }).catch((result)=>{
-    // });
+    })
+    
+ });
 });
 
 

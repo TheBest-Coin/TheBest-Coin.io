@@ -37,7 +37,7 @@ document.getElementById('friend').addEventListener('click',()=>{
     window.location.href = "./pages/friend-page.html";
 })
 document.getElementById('Charg').addEventListener('click',()=>{
-    window.location.href = "./pages/charg.html";
+    window.location.href = "./pages/charg2.html";
 })
 document.getElementById('todo').addEventListener('click',()=>{
     window.location.href = "./pages/todo-page.html";

@@ -103,6 +103,15 @@
     </section>
 
     <script>
+        const task = document.querySelector(".task");
+task.addEventListener("reward", (event) => {
+  // event.detail contains your block id
+  alert(`Reward in block ${event.detail}`);
+});
+
+task.addEventListener("onBannerNotFound", (event) => {
+  alert(`Can't found banner for block ${event.detail}`);
+});
         document.getElementById('pRv').innerText = localStorage.getItem('Rcoin');
     </script>
 </body>

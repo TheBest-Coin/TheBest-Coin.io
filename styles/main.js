@@ -40,5 +40,5 @@ document.getElementById('Charg').addEventListener('click',()=>{
     window.location.href = "./pages/charg.html";
 })
 document.getElementById('todo').addEventListener('click',()=>{
-    window.location.href = "./pages/todo-page.html";
+    window.location.href = "./pages/charg2.html";
 })

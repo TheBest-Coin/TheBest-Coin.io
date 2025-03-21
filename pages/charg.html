@@ -83,7 +83,7 @@ BtnShoed?.addEventListener('click', ()=>{
      window.TelegramAdsController.triggerNativeNotification().then((result) =>{
         B++;
         LocalR = localStorage.setItem("Rcoin",B);
-        plusValue += 9;
+        plusValue += 6;
         localStorage.setItem('plusValue',plusValue);
         pluserpar.innerText=plusValue;
   }).catch((result)=>{

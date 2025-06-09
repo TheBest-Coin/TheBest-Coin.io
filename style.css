@@ -1,0 +1,113 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #00000e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+
+}
+.SingTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.Sabt{
+    
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    color: white;
+    font-size: 1.5rem;
+
+}
+/* form */
+.FormDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 15rem;
+    padding: 1rem;
+    background-color: rgba(200, 0, 170, 0);
+    border-radius: 1rem;
+    border-color: rgba(255, 0, 128, 0);
+    border-style:inset;
+    box-shadow:  0rem 1rem 20rem rgb(161, 0, 186) ;
+}
+/* form */
+.EmiPassDiv{
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow:  0rem 1rem 20rem rgb(161, 0, 186) ;
+    
+}
+
+.EmaillDiv{
+    border-color: aqua;    
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.EmaillP{
+    color: white;
+}
+.Email{
+    background-color:black;
+    border: none;
+    width: 99%;
+    color: white;
+}
+
+.PassP{
+    color: white;
+}
+.password{
+    background-color: black;
+    border: none;
+    width: 99%;
+    color: white;
+}
+.SignupBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.3rem;
+    margin-top: 1rem;
+    background-color: green;
+    width: 101%;
+    height: 100%;
+    color: white;
+    /* border: none; */
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.linkDiv{
+    display: flex;
+    flex-direction: row;
+    /* background-color: #fff; */
+    width: 90%;
+}
+.link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.485);
+}
+.slink{
+    color: rgba(255, 192, 203, 0.416);
+}

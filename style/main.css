@@ -1,0 +1,743 @@
+body {
+    /* background-color: #000022; */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #000022;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.robotZ {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    background-color: #000022;
+    width: 100%;
+    height: 100%;
+    transition: 1ms;
+}
+
+
+.robotZ p {
+    color: #EE00ff;
+    font-size: 1.6rem;
+    text-shadow: 0rem 0rem 0.5rem rgb(255, 0, 174);
+
+}
+
+#notrobot {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.robotZnone {
+    display: none;
+    transition: 1ms;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.7rem;
+    background-color: rgb(17, 17, 17);
+}
+
+.logodiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 30%;
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+    filter: drop-shadow(0rem 0rem 0.5rem #EE00ff);
+}
+
+.valuediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+
+.BlackValueDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+}
+
+.valuebox {
+    width: 80%;
+    height: 100%;
+    color: white;
+}
+
+.psRightDiv {
+    width: 80%;
+    height: 50%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 1.5rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.suportdiv {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.SuportBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: 0.1rem;
+    width: 60%;
+    color: white;
+    height: 50%;
+    border-color: #9b00a6;
+    background-color: #EE00ff;
+    box-shadow: 0rem 0rem 1rem #EE00ff;
+}
+
+.bii {
+    background-color: rgb(144, 109, 20);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem gold;
+    color: gold;
+}
+
+#pointvalue {
+    font-size: 1.5rem;
+    text-shadow: 0rem 0rem 0.8rem white;
+}
+
+#pointvalue2 {
+    font-size: 1.5rem;
+    text-shadow: 0rem 0rem 0.8rem white;
+}
+
+#pointvalue3 {
+    font-size: 1.5rem;
+    text-shadow: 0rem 0rem 0.8rem white;
+}
+
+/* Header Complete */
+
+
+/* main */
+.Profsec {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    width: 100%;
+    height: 50rem;
+    background-color: #000022;
+}
+
+.Profsecnone {
+    display: none;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    width: 100%;
+    height: 50rem;
+    background-color: #000022;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+    justify-content: start;
+    gap: 5rem;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    height: 38%;
+}
+
+.welcomeH2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    color: white;
+    text-shadow: 0rem 0rem 1rem rgb(245, 150, 166);
+    width: 100%;
+    font-size: 2rem;
+
+}
+
+.emaildiv {
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    border-style: dashed;
+    border-width: 0.1rem;
+    border-color: #000057;
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 1rem #00003e;
+    /* background-color: rgb(17, 17, 17); */
+    color: white;
+}
+
+.MedalsDiv {
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+
+}
+
+.HalowMedalOn {
+    display: flex !important;
+    height: 3rem;
+    border-radius: 10rem;
+    animation: TransiPlus 1s infinite alternate ease-in-out;
+}
+.HalowMedalOff {
+    display: flex !important;
+    height: 3rem;
+    filter:
+        drop-shadow(0px 3px 5px silver)
+        grayscale()
+    ;
+}
+
+@keyframes TransiPlus {
+    0% {
+        filter: drop-shadow(0 3px 5px rgb(255, 140, 0));
+        transform: rotate(-15deg);
+        margin-left: 0.2rem;
+    }
+
+    /* 25%{filter: drop-shadow(0 3px 5px rgba(255, 140, 0, 0.729));} */
+    50% {
+        filter: drop-shadow(0 3px 5px rgba(255, 140, 0, 0.729));
+    }
+
+    /* 75%{filter: drop-shadow(0 3px 5px rgba(255, 140, 0, 0.729));} */
+
+    100% {
+        filter: drop-shadow(0 3px 5px rgb(255, 140, 0));
+        transform: rotate(15deg);
+        margin-left: -0.2rem;
+    }
+}
+
+
+.emailp {
+    text-shadow: 0rem 0rem 0.5rem rgb(245, 150, 166);
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: -23%;
+    margin-left: 1rem;
+    color: white;
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    text-shadow: 0rem 0rem 1rem rgb(245, 150, 166);
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+#Rankpp {
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5rem;
+}
+
+.SilverRank {
+    color: silver;
+    text-shadow: 0rem 0rem 1rem silver;
+    display: flex;
+    flex-direction: row;
+}
+
+.GoldenRank {
+    color: rgb(255, 247, 0);
+    text-shadow: 0rem 0rem 1rem rgb(255, 251, 131);
+    display: flex;
+    flex-direction: row;
+}
+
+.DiamondRank {
+    color: rgb(0, 183, 255);
+    text-shadow: 0rem 0rem 1rem rgb(0, 234, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.Levelp {
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5rem;
+}
+
+
+
+#Levelp {
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0rem 0rem 1rem rgb(0, 234, 255);
+
+}
+
+#Pointsp {
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5rem;
+}
+
+.main3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.logoutbtn {
+    background-color: pink;
+    width: 25%;
+    height: 2rem;
+    border-radius: 0.3rem;
+    color: white;
+    border-color: #9b00a6;
+    background-color: #EE00ff;
+    box-shadow: 0rem 0rem 1rem #EE00ff;
+}
+
+
+/* main complete */
+
+.footer {
+    position: fixed;
+    z-index: 1001;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.btns input {
+    background-color: rgb(17, 17, 17);
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 30%;
+    height: 100%;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+.textshadowbtn {
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.3rem;
+    font-weight: 600;
+    text-shadow: 0rem 0rem 0.2rem white;
+    box-shadow: 0rem -0.2rem 1rem #fddaff73;
+}
+
+
+/* .........Refrral Page.......... */
+.smallCircle {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 5rem;
+    background-color: yellow;
+    margin-top: -1.6rem;
+    margin-left: -0.5rem;
+    box-shadow: 0rem 0rem 0.3rem orange;
+}
+
+#BackFer {
+    color: white;
+    filter: drop-shadow(0rem 0rem 0.5rem white);
+}
+
+.RefPage {
+    position: fixed;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    z-index: 999199;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.RefPage4 {
+    position: fixed;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    z-index: 9991999;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.RefDivs {
+    background-color: aqua;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-right-color: #EE00ff;
+    border-left-color: aqua;
+    border-bottom-color: #EE00ff;
+    border-top-color: aqua;
+    box-shadow: 0rem 0rem 5rem #EE00ff inset;
+
+}
+
+.RefPage2 {
+    position: fixed;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    z-index: 999199;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.BackRefDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    /* background-color: #fff; */
+}
+
+.headerRefDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.MainRefDivs {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+
+}
+
+.MyRefIdDivs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+}
+
+.RefId {
+    background-color: silver;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+
+}
+
+.CopyInput {
+    background-color: aqua;
+    padding: 0.6rem 1rem;
+    border-style: none;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.InfoReff {
+    font-size: 0.8rem;
+}
+
+.FriendRef {
+    background-color: silver;
+    color: white;
+    border-style: none;
+    width: 80%;
+    height: 2rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.ClaimRef {
+    background-color: gray;
+    color: white;
+    width: 82%;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+
+}
+
+.ImportDivRef {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: orange;
+    border-radius: 0.8rem;
+    padding: 0rem 0.5rem;
+
+}
+
+.ImportPRef {
+    font-size: 0.8rem;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.bootomRefDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+
+}
+
+.InfoIcon {
+    color: orangered;
+}
+
+
+
+
+/* Neon Crash */
+.earnsec4 {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem 1.5rem;
+}
+
+/* Styles for neon aesthetics and responsiveness */
+:root {
+    --neon-start: #00ff80;
+    /* Green for claim/safe */
+    --neon-rising: #00ffff;
+    /* Cyan for graph */
+    --neon-bet: #ffcc00;
+    /* New Neon Yellow for Real Bet/Ads */
+    --dark-background: #111;
+    --crash-color: #ff004c;
+    /* Red for crash */
+    --warning-orange: #ff9900;
+    /* Orange for warnings */
+    --gray-disabled: #555;
+    /* Dark gray for temporary disabled state */
+    --ad-loading: #9300ff;
+    /* Purple for Ad Loading */
+}
+
+@keyframes neon-breath {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px var(--neon-bet), 0 0 5px rgba(255, 204, 0, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 40px var(--neon-bet), 0 0 15px rgba(255, 204, 0, 0.8);
+    }
+}
+
+
+.crash-container {
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px solid var(--neon-bet);
+    box-shadow: 0 0 25px var(--neon-bet);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.5s ease;
+    max-width: 400px;
+    width: 95%;
+    margin-top: 2.5rem;
+}
+
+#multiplierDisplay {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px var(--neon-start);
+    margin: 10px 0;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.1s, text-shadow 0.1s, transform 0.05s linear;
+}
+
+#crashCanvas {
+    border: 2px solid var(--neon-rising);
+    box-shadow: 0 0 15px var(--neon-rising);
+    margin-bottom: 20px;
+    display: block;
+    background-color: #111;
+    width: 100%;
+    /* Responsive canvas width */
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.action-button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#betButton {
+    background-color: var(--neon-bet);
+    color: white;
+    box-shadow: 0 0 20px var(--neon-bet);
+    text-shadow: 0 0 5px #000;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
+}
+
+.breathing-neon {
+    animation: neon-breath 2s ease-in-out infinite alternate;
+}
+
+#demoButton {
+    background-color: #444;
+    color: white;
+    box-shadow: 0 0 10px #777;
+}
+
+#cashOutButton {
+    background-color: var(--neon-start);
+    color: var(--dark-background);
+    box-shadow: 0 0 15px var(--neon-start);
+    display: none;
+    direction: ltr;
+}
+
+.delay-disabled {
+    background-color: var(--gray-disabled) !important;
+    box-shadow: 0 0 5px #333 !important;
+    color: #aaa !important;
+    cursor: not-allowed !important;
+}
+
+.disabled-button {
+    background-color: #444 !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    color: #aaa !important;
+}
+
+.loading-ad {
+    background-color: var(--ad-loading) !important;
+    box-shadow: 0 0 15px var(--ad-loading) !important;
+    color: white !important;
+    cursor: wait !important;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 18px;
+    color: var(--neon-start);
+    text-shadow: 0 0 5px var(--neon-start);
+    min-height: 25px;
+}

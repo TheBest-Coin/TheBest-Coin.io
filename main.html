@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+  <title>Main</title>
+  <script src="https://richinfo.co/richpartners/telegram/js/tg-ob.js"></script>
+  <script>
+    window.TelegramAdsController = new TelegramAdsController();
+    window.TelegramAdsController.initialize({
+      pubId: "978895",
+      appId: "2817",
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/Shop.css">
+  <link rel="stylesheet" href="./style/anime.css">
+
+</head>
+
+<body>
+
+  <div style="position: fixed; z-index: 999999;width: 100%;height: 100%;" id="loadingPage">
+    <div class="Load" id="load"></div>
+    <div id="cosmic-container">
+        <div id="logo-container">
+            <div id="freepay-text">
+                <span id="free">Free</span><span id="pay">Pay</span>
+            </div>
+        </div>
+        <div id="custom-div">
+            <!-- <ion-icon name="card"></ion-icon> -->
+            <!-- <input type="submit" value="Lets Go" id="LetsGoBtn"> -->
+            <div class="loader-container">
+              <div class="loader">
+                  <div class="loader-circle"></div>
+                  <div class="loader-circle"></div>
+                  <div class="loader-circle"></div>
+              </div>
+              <!-- <div class="loading-text">Loading...</div> -->
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="robotZ" id="robozhiden">
+    <p>i am not robot</p>
+    <!-- <button id="notrobot">i am not robot</button> -->
+    <input type="checkbox" name="" id="notrobot">
+  </div>
+
+  <!-- loaded -->
+  <!-- <div class="Load" id="load">
+    <p>Waiting Please...</p>
+    
+  </div> -->
+
+  
+  
+
+
+
+  <section class="header">
+    <div class="logodiv">
+      <img
+        src="https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/1748878634252.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC8xNzQ4ODc4NjM0MjUyLnBuZyIsImlhdCI6MTc1MjM5NjI0NywiZXhwIjoyODM5OTkyMzk2MjQ3fQ.OpbpsuBK9geZWUhruPS3KNK7ifuzfv5Y58Rl1J2hs8w"
+        alt="FreePay" class="logo">
+    </div>
+    <div class="valuediv">
+
+      <div class="valuebox">
+        <div class="BlackValueDiv">
+
+          <div class="psRightDiv">
+            <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                class="bi bii bi-coin" viewBox="0 0 16 16">
+                <path
+                  d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+              </svg></i>
+            <!-- point value -->
+            <p id="pointvalue">0</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="suportdiv">
+        <button type="button" onclick="sendEmail()" class="SuportBtn"><i class="suportI"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-text-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+            </svg></i></button>
+
+      </div>
+    </div>
+  </section>
+  <!-- profilesec -->
+  <section class="Profsec" id="profsec">
+    <div class="mainDiv">
+      <div class="main1">
+
+        <h2 class="welcomeH2" id="welcomeH2">Welcome to Free<span style="color: #EE00ff;">Pay</span></h2>
+        <div class="emaildiv">
+          <p class="emailp" id="emailpp"></p>
+        </div>
+
+
+      </div>
+      <div class="main2">
+        <p id="Userp"></p>
+        <p id="Rankpp" style="display: flex;flex-direction: row;">Rank: <span id="Ranks" class=""> </span></p>
+        <p class="Levelp">Level:<span id="Levelp"></span></p>
+        <p id="Pointsp"></p>
+        <div class="main3">
+          <button type="submit" class="logoutbtn" id="LogOutbtn">Log out</button>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- shopsec -->
+  <section class="secc2" id="shopsec">
+    <section class="shopsecup">
+      <div class="shoph2div">
+        <h2 class="shoph2">Shop</h2>
+      </div>
+      <div class="shopPdiv">
+        <div class="borderDiv">
+          <p class="shopP">To speed up your orders and get discounts on items, purchase a Golden or Diamond account.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- form -->
+    <!-- game -->
+    <section class="formHiden" id="FormSec">
+      <div class="formdivvv">
+        <div class="Ldiv">
+
+          <img src="" class="freeLDFimg" id="Cardimage" alt="">
+          <div class="GemInfoDiv">
+            <p id="P">
+            </p>
+            <p id="PNeedP" class="PneedP">
+              10000
+            </p>
+          </div>
+        </div>
+
+        <div class="Rdiv">
+          <div class="RDName">
+            <p>Name :</p>
+            <input type="text" placeholder="Input Your Name" id="Name">
+
+          </div>
+
+          <div class="RDEmail">
+            <p>Email :</p>
+            <input type="text" placeholder="Example@email.com" id="Email">
+          </div>
+
+          <div class="RDID">
+            <p id="pUpderid">Free Fire id :</p>
+            <input type="text" placeholder="input your Free Fire id" id="id">
+          </div>
+
+          <!-- subBTN -->
+
+          <div class="subshopdiv">
+            <!-- <div class="BTSHOPDIV"> -->
+            <input type="submit" id="Noshopbtn" value="Back" class="nobtn">
+            <input type="submit" value="Buy" id="subshopbtn" class="yesbtn ">
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+    <!-- account -->
+
+
+
+    <!-- bottom sec shop -->
+    <section class="shopsecbottom">
+      <div class="PacksDivShop">
+        <br><br><br><br><br><br><br>
+
+
+        <div class="ShopSecBottomRowDivShop">
+          <div class="FreeFire100" id="FreeDiv110">
+            <p class="Gem110 UperPack">100+10💎</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="Gem110" class="pr">0</p>
+            </div>
+          </div>
+          <div class="FreeFire200" id="FreeDiv221">
+            <p class="Gem200 UperPack">200+21💎</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="Gem200" class="pr">0</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="ShopSecBottomRowDivShop">
+          <div class="FreeFire500" id="FreeDiv530">
+            <p class="Gem500 UperPack">500+30💎</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="Gem500" class="pr">0</p>
+            </div>
+
+          </div>
+          <div class="FreeFire1080" id="FreeDiv1188">
+            <p class="Gem1080 UperPack">1080+108💎</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="Gem1080" class="pr">0</p>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="ShopSecBottomRowDivShop">
+          <div class="FreeFire2200" id="FreeDiv2200">
+            <p class="Gem2200 UperPack">Weekly💎</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="Gem2200" class="pr">0</p>
+            </div>
+
+          </div>
+          <div class="PUBG60" id="PUBG60UC">
+            <p class="UC60 UperPack">60 UC</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="UC60" class="pr">0</p>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="ShopSecBottomRowDivShop">
+          <div class="PUBG300" id="PUBG325UC">
+            <p class="UC300 UperPack">300+25 UC</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="UC300" class="pr">0</p>
+            </div>
+
+          </div>
+          <div class="PUBG600" id="PUBG660UC">
+            <p class="UC600 UperPack">600+60 UC</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="UC600" class="pr">0</p>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="ShopSecBottomRowDivShop">
+          <div class="FreePayGoldenAccount" id="DivGoldendAccount">
+            <p class="GoldenPack UperPackGolden">Golden+</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="GoldenRank" class="pr">0</p>
+            </div>
+          </div>
+          <div class="FreePayDiamondAccount" id="DivDiamondAccount">
+            <p class="DiamondPack UperPackDiamond">Diamond++</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="DiamondRank" class="pr">0</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="ShopSecBottomRowDivShop">
+          <div class="Tether15Trc20" id="DivTether15Trc20">
+            <p class="Tether15 UperPack">15$</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="Tether15Value" class="pr">0</p>
+            </div>
+          </div>
+          <div class="Tether50Trc20" id="DivTether50Trc20">
+            <p class="Tehter50 UperPack">50$</p>
+            <div class="bottomValuePack">
+              <i><svg id="Pointp" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bii bi-coin" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                </svg></i>
+              <p id="Tether50Value" class="pr">0</p>
+            </div>
+          </div>
+
+        </div>
+        <br><br><br><br><br><br><br>
+
+      </div>
+    </section>
+  </section>
+
+  <!-- earnsec -->
+  <section class="secc3" id="earnsec">
+    <section class="earnsec3">
+      <div class="shopsecup">
+        <div class="shoph2div">
+          <h2 class="shoph2">Earn</h2>
+        </div>
+        <div class="shopPdivEarn">
+          <div class="borderDivEarn">
+            <p class="shopP">if ads are not being display, please change your IP to a defferent Country!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomearn">
+
+        <div class="bottomearnicon">
+          <button class="PlusBtn" id="ShowAdsbtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" class="PlusI" id="PlusI" height="16" fill="currentColor"
+              class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+            </svg></button>
+        </div>
+        <div class="ClaimDiv">
+          <input type="submit" class="ClaimInputgray" id="Claimbtn" value="Claim (0)">
+        </div>
+      </div>
+    </section>
+
+
+
+  </section>
+  <section class="footer">
+    <div class="btns">
+      <input type="button" id="Profileinput" class="" value="Profile">
+      <input type="button" id="Shopinput" value="Shop">
+      <input type="button" id="Earninput" value="Earn">
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+window.addEventListener('offline', ()=>{
+  Swal.fire({
+  title: "Chek your Internet!",
+  icon: "warning"
+});
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+            // Create stars
+            const container = document.getElementById('cosmic-container');
+            const starCount = 150;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Random position
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                
+                // Random size (0.5px to 2px)
+                const size = Math.random() * 1.5 + 0.5;
+                // Random animation delay
+                const delay = Math.random() * 3;
+                
+                star.style.left = `${x}%`;
+                star.style.top = `${y}%`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.animationDelay = `${delay}s`;
+                
+                container.appendChild(star);
+            }
+            // Function to create shooting stars
+            function createShootingStar() {
+                const shootingStar = document.createElement('div');
+                shootingStar.className = 'shooting-star';
+                
+                const startX = Math.random() * 100;
+                const startY = Math.random() * 30;
+                
+                shootingStar.style.left = `${startX}%`;
+                shootingStar.style.top = `${startY}%`;
+                
+                container.appendChild(shootingStar);
+                
+                setTimeout(() => {
+                    shootingStar.remove();
+                  }, 1000);
+            }
+            // Add shooting stars randomly
+            const shootingStarInterval = setInterval(createShootingStar, 2000);
+            // Stop shooting stars after 5 seconds
+            setTimeout(() => {
+                clearInterval(shootingStarInterval);
+            }, 16000);
+            // Hide loading page after 15 seconds
+            // okkkkkkk
+            setTimeout(function(){
+                document.getElementById('loadingPage').style.display = 'none';
+            }, 15000);
+        });
+
+  </script>
+
+  <script src="https://telegram.org/js/telegram-web-app.js?58"></script>
+  <script src="./js/ProfSec.js"></script>
+</body>
+
+</html>

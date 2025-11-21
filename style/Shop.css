@@ -1,0 +1,1124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#shopsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 2s ease-in;
+}
+
+.shoph2div {
+    background-color: #000022;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.shoph2 {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px 0px #ff00ee,
+        -4px -4px 0px #00ffff;
+    letter-spacing: 2px;
+    /* color: white; */
+    margin-left: 1rem;
+}
+
+.shopPdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000022;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.borderDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+    border-style: dashed;
+    border-width: 0.1rem;
+    border-color: pink;
+    box-shadow: 0rem 0rem 0.8rem pink inset;
+    width: 85%;
+    height: 60%;
+}
+
+/* kkkkkkkkkkkkkk */
+
+.shopP {
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 0rem 0rem 1rem pink;
+    padding: 1rem;
+
+}
+
+/* shop sec bottom  */
+.shopsecbottom {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.PacksDivShop {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 2.5rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-top: 8rem;
+    padding-top: 25rem;
+    padding-bottom: 10rem;
+
+
+}
+
+
+.ShopSecBottomRowDivShop {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000022;
+}
+
+.ShopSecBottomRowDivShopGift {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    background-color: #000022;
+}
+
+
+.UperPack {
+    background-color: #ff00e12a;
+    display: flex;
+    padding-left: 0.5rem;
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+    padding-right: 0.3rem;
+    flex-direction: column;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: -0.003rem;
+    box-shadow: 0rem 0rem 0.3rem rgb(251, 123, 144) inset;
+    color: #EE00FF;
+    font-weight: 1000;
+}
+
+.UperPackGolden {
+    background-color: #fffb002a;
+    display: flex;
+    padding-left: 0.5rem;
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+    padding-right: 0.3rem;
+    flex-direction: column;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: -0.003rem;
+    box-shadow: 0rem 0rem 0.3rem rgb(249, 251, 123) inset;
+    color: #ffee00;
+    font-weight: 1000;
+}
+
+.UperPackDiamond {
+    background-color: #00f2ff2a;
+    display: flex;
+    padding-left: 0.5rem;
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+    padding-right: 0.3rem;
+    flex-direction: column;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: -0.003rem;
+    box-shadow: 0rem 0rem 0.3rem rgb(123, 227, 251) inset;
+    color: #00d0ff;
+    font-weight: 1000;
+}
+
+.bottomValuePack {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-shadow: 0rem 0rem 1rem white;
+    font-weight: 900;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    height: 2rem;
+    margin-top: 2rem;
+}
+
+.pr {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.9rem;
+    padding-right: 0.3rem;
+    /* background-color: #fff; */
+}
+
+.FreeFire100 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/FreeFire.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9GcmVlRmlyZS5wbmciLCJpYXQiOjE3NTIzOTU4NzgsImV4cCI6MjgzOTk5MjM5NTg3OH0.NRDOZvqIRJGmU3hJ_MRPQlUXCSCpNgttLvhw1pIM6CM);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
+}
+
+.HallowGift {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/Gifts/HalowGiftPack.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJHaWZ0cy9IYWxvd0dpZnRQYWNrLmpwZyIsImlhdCI6MTc2MTkxNTM2NSwiZXhwIjozMzI2NjM3OTM2NX0.67eeqNWZB_FGNfwlhV_UQ-DZHK5kTLyyN8wwMx3l2VQ);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin-left: 0.5rem;
+
+}
+
+.GifClaimed {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/Gifts/HalowGiftPack.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJHaWZ0cy9IYWxvd0dpZnRQYWNrLmpwZyIsImlhdCI6MTc2MTkxNTM2NSwiZXhwIjozMzI2NjM3OTM2NX0.67eeqNWZB_FGNfwlhV_UQ-DZHK5kTLyyN8wwMx3l2VQ);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: white;
+    margin-left: 0.5rem;
+    filter: grayscale();
+    pointer-events: none;
+
+}
+
+#tads-container-894 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+}
+#FreePayLoadingAds {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+}
+
+.AdsByFreePay {
+    /* background-color: #00d0ff; */
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+.LoadingAdP{
+    animation: LOadingAds 4s infinite alternate ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.LoadingAdPGolden{
+    position: fixed;
+    bottom: 0;
+    
+    animation: LoadinGoldenAds 8s infinite alternate ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes LOadingAds{
+    0%{
+        color: #EE00FF;
+    }
+    25%{
+        color: aquamarine;
+    }
+    50%{
+        color: aqua;
+    }
+    75%{
+        color: aquamarine;
+    }
+    100%{
+        color: #EE00FF;
+    }
+}
+@keyframes LoadinGoldenAds{
+    0%{
+        color: #EE00FF;
+        background-color: #fff;
+    }
+    50%{
+        background-color: #EE00FF;
+        color: #fff;
+    }
+    
+    100%{
+        color: #EE00FF;
+        background-color: #fff;
+
+    }
+}
+
+.FreeFire100:active {
+    box-shadow: 0.3rem 0.3rem 1.2rem rgb(17, 128, 255);
+    transition: 0.5s;
+
+}
+
+.FreeFire200 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/FreeFire.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9GcmVlRmlyZS5wbmciLCJpYXQiOjE3NTIzOTU4NzgsImV4cCI6MjgzOTk5MjM5NTg3OH0.NRDOZvqIRJGmU3hJ_MRPQlUXCSCpNgttLvhw1pIM6CM);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
+}
+
+.FreeFire500 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/FreeFire.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9GcmVlRmlyZS5wbmciLCJpYXQiOjE3NTIzOTU4NzgsImV4cCI6MjgzOTk5MjM5NTg3OH0.NRDOZvqIRJGmU3hJ_MRPQlUXCSCpNgttLvhw1pIM6CM);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
+}
+
+.FreeFire1080 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/FreeFire.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9GcmVlRmlyZS5wbmciLCJpYXQiOjE3NTIzOTU4NzgsImV4cCI6MjgzOTk5MjM5NTg3OH0.NRDOZvqIRJGmU3hJ_MRPQlUXCSCpNgttLvhw1pIM6CM);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
+}
+
+.FreeFire2200 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/FreeFire.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9GcmVlRmlyZS5wbmciLCJpYXQiOjE3NTIzOTU4NzgsImV4cCI6MjgzOTk5MjM5NTg3OH0.NRDOZvqIRJGmU3hJ_MRPQlUXCSCpNgttLvhw1pIM6CM);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
+}
+
+/* PUBG  */
+.PUBG60 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/PUBG.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9QVUJHLnBuZyIsImlhdCI6MTc1MjM5NjAwMywiZXhwIjoyODM5OTkyMzk2MDAzfQ.lFASuf_1wQt00RjIwUQFdL5wDhqKaF1kH2ftxb95ix4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
+}
+
+.PUBG300 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/PUBG.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9QVUJHLnBuZyIsImlhdCI6MTc1MjM5NjAwMywiZXhwIjoyODM5OTkyMzk2MDAzfQ.lFASuf_1wQt00RjIwUQFdL5wDhqKaF1kH2ftxb95ix4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.PUBG600 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/PUBG.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9QVUJHLnBuZyIsImlhdCI6MTc1MjM5NjAwMywiZXhwIjoyODM5OTkyMzk2MDAzfQ.lFASuf_1wQt00RjIwUQFdL5wDhqKaF1kH2ftxb95ix4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.Tether15Trc20 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/TETHERtrc20.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9URVRIRVJ0cmMyMC5qcGciLCJpYXQiOjE3NTIzOTYwNTAsImV4cCI6MjgzOTk5MjM5NjA1MH0.ZzgQQI4c8U2brT2-hYLwyAL090lpwcyGPppJr519ca4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.Tether50Trc20 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/TETHERtrc20.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9URVRIRVJ0cmMyMC5qcGciLCJpYXQiOjE3NTIzOTYwNTAsImV4cCI6MjgzOTk5MjM5NjA1MH0.ZzgQQI4c8U2brT2-hYLwyAL090lpwcyGPppJr519ca4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+.AdsPack{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/Advertising.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9BZHZlcnRpc2luZy5qcGciLCJpYXQiOjE3NjMxMzE2OTksImV4cCI6MzE3MDkxNTk1Njk5fQ.9WqNWKl_Cziw0hiIX5WT3mSLpbO1ZqtVNihuhCTBn9g);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+.CommingSoonDivPack {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/PooPPic/ComingSoon.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb29QUGljL0NvbWluZ1Nvb24uanBnIiwiaWF0IjoxNzYxNDk2MjE3LCJleHAiOjMxNTM3NzI5OTYwMjE3fQ.MmdI2tqyP7tRHfnNd9WROzo8MerP1BWVHPnCMwB3shQ);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.FreePayGoldenAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/FreePayAcount.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9GcmVlUGF5QWNvdW50LmpwZyIsImlhdCI6MTc1MjM5NjExNCwiZXhwIjoyODM5OTkyMzk2MTE0fQ.Dfafwuv3IYR2Y_BrfEb8SzZIPjyxqjii_LuP4NEnCBo);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.FreePayDiamondAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgb(123, 183, 251);
+    width: 43.5%;
+    height: 6rem;
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/picsbucketshop/FreePayAcount.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaWNzYnVja2V0c2hvcC9GcmVlUGF5QWNvdW50LmpwZyIsImlhdCI6MTc1MjM5NjExNCwiZXhwIjoyODM5OTkyMzk2MTE0fQ.Dfafwuv3IYR2Y_BrfEb8SzZIPjyxqjii_LuP4NEnCBo);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+/* fprmsec */
+/* hiden/Show */
+.formsec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 0, 162, 0.171);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+}
+
+.formHiden {
+    display: none;
+}
+
+.FormSecAccount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 0, 162, 0.171);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+}
+
+.FormSecAccountHiden {
+    display: none;
+}
+
+
+
+.FormDiv {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+}
+
+.formdivvv {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+}
+
+/* LD  */
+.Ldiv {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-shadow: -0.2rem 0.1rem 0.4rem purple;
+    font-weight: 900;
+    width: 100%;
+    background-color: #EE00FF;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+}
+
+.freeLDFimg {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    width: 35%;
+    height: 4.5rem;
+    border-radius: 0.3rem;
+    margin-top: -0.2rem;
+    object-fit: cover;
+    transform: scale(1.5);
+    box-shadow: 0rem 0rem 1rem purple;
+}
+
+.GemInfoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+    height: auto;
+    font-size: 0.8rem;
+    color: aqua;
+
+}
+
+#PNeedP {
+    color: #000022;
+    padding: 0.25rem;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: pink;
+    text-shadow: none;
+}
+
+.Rdiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0.242);
+}
+
+.RDName {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    margin-left: 0.8rem;
+}
+
+.RDName p {
+    width: 3rem;
+    height: 1rem;
+    padding: 0.5rem;
+    background-color: pink;
+    color: black;
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+
+.RDName input {
+    padding: 0.2rem;
+    width: 90%;
+    height: 2rem;
+    margin-top: -1rem;
+    border-style: none;
+    background-color: pink;
+    border-radius: 0rem 0.8rem 0.8rem 0.8rem;
+}
+
+/* .. */
+.RDEmail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    margin-left: 0.8rem;
+
+}
+
+.RDEmail p {
+    width: 3rem;
+    height: 1rem;
+    padding: 0.5rem;
+    background-color: pink;
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+
+.RDEmail input {
+    padding: 0.2rem;
+    width: 90%;
+    height: 2rem;
+    margin-top: -1rem;
+    border-style: none;
+    background-color: pink;
+    border-radius: 0rem 0.8rem 0.8rem 0.8rem;
+}
+
+/* .. */
+.RDID {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.2rem;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    margin-left: 0.8rem;
+}
+
+.RDID p {
+    width: auto;
+    height: 1rem;
+    padding: 0.5rem;
+    background-color: pink;
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+
+.RDID input {
+    padding: 0.2rem;
+    width: 90%;
+    height: 2rem;
+    margin-top: -1rem;
+    border-style: none;
+    background-color: pink;
+    border-radius: 0rem 0.8rem 0.8rem 0.8rem;
+}
+
+/* .. */
+.subshopdiv {
+    background-color: rgba(255, 192, 203, 0.372);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+#Noshopbtn {
+    background-color: rgb(172, 127, 134);
+    width: 45%;
+    height: 3rem;
+    border-radius: 0.8rem 0rem 0rem 0rem;
+    border-style: none;
+    box-shadow: 0rem 0rem 0.8rem rgb(172, 127, 134);
+
+
+}
+
+#subshopbtn {
+    background-color: #1eff00;
+    width: 45%;
+    height: 3rem;
+    border-radius: 0rem 0.8rem 0rem 0rem;
+    border-style: none;
+    box-shadow: 0rem 0rem 0.8rem #1eff00;
+}
+
+#Noshopbtn2 {
+    background-color: rgb(172, 127, 134);
+    width: 45%;
+    height: 3rem;
+    border-radius: 0.8rem 0rem 0rem 0rem;
+    border-style: none;
+    box-shadow: 0rem 0rem 0.8rem rgb(172, 127, 134);
+
+
+}
+
+#subshopbtn2 {
+    background-color: #1eff00;
+    width: 45%;
+    height: 3rem;
+    border-radius: 0rem 0.8rem 0rem 0rem;
+    border-style: none;
+    box-shadow: 0rem 0rem 0.8rem #1eff00;
+}
+
+/* EarnSec */
+.secc4 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.MiniGameDivs {
+    /* background-color: #fff; */
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 100%; */
+    padding-right: -1rem;
+    margin-top: -1.5rem;
+    overflow-x: scroll;
+}
+
+.MiniGameP {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 0px #ff00ee,
+        -2px -2px 0px #00ffff;
+    letter-spacing: 1px;
+    /* color: white; */
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: small;
+}
+
+
+.MiniGameDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
+.MainPoop {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.DivsCon {
+    background-color: #000022;
+    border-color: pink;
+    border-style: inset;
+    border-width: 0.2rem;
+    box-shadow: inset 0rem 0rem 1rem rgb(0, 145, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.PoopDivCon1 {
+    background-color: #67008f;
+    width: 90%;
+    height: 3.5rem;
+    margin-top: 2rem;
+    pointer-events: none;
+
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #EE00FF;
+    box-shadow: inset 0rem -0.1rem 1rem rgb(255, 0, 200);
+}
+
+.PoopDivCon {
+    background-color: #67008f;
+    width: 90%;
+    height: 3.5rem;
+    pointer-events: none;
+
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #EE00FF;
+    box-shadow: inset 0rem -0.1rem 1rem rgb(255, 0, 200);
+}
+
+.XDiv {
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-color: #EE00FF;
+    box-shadow: inset 0rem 0.3rem 1rem rgb(255, 0, 200);
+    background-color: #67008f;
+    width: 70%;
+    height: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -1.2rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.PoopDivConOff {
+    background-color: #67008f;
+    width: 90%;
+    height: 3.5rem;
+    pointer-events: none;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: gray;
+    box-shadow: inset 0rem -0.1rem 1rem gray;
+}
+
+.PoopDivCon1Off {
+    background-color: #67008f;
+    width: 90%;
+    height: 3.5rem;
+    margin-top: 2rem;
+    pointer-events: none;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: gray;
+    box-shadow: inset 0rem -0.1rem 1rem gray;
+}
+
+.XDivOff {
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-color: #EE00FF;
+    box-shadow: inset 0rem 0.3rem 1rem rgb(255, 170, 237);
+    background-color: #67008f;
+    /* background-color: white; */
+    width: 70%;
+    height: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -1.2rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.ForDIvs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.picZ4 {
+    background-color: #fff;
+    background-image: url(https://nomuylulsjtwjoinrxmr.supabase.co/storage/v1/object/sign/PooPPic/1749484908306.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV81YTYzZmZiNS02NDZkLTRlYzAtOTJmMC02YWFlZTE2MmNkOGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb29QUGljLzE3NDk0ODQ5MDgzMDYuanBnIiwiaWF0IjoxNzU3MDUyMDY0LCJleHAiOjMxNzA4NTUxNjA2NH0.RWJiWZH-ZU_GwkMrpqKAiThz9NY7apvj60ZEgZhc5DA);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2.8rem;
+    width: 23%;
+    margin-top: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+.BottomPoopMain {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.XNumbers {
+    background-color: #000022;
+    border-color: pink;
+    border-style: inset;
+    border-width: 0.2rem;
+    border-bottom: none;
+    box-shadow: inset 0rem 0rem 1rem rgb(0, 145, 255);
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    padding: 0.1rem;
+}
+
+
+.Xinput {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.2rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    border-style: hidden;
+    width: 20%;
+    height: auto;
+}
+
+.ClickedZ {
+    background-color: rgb(245, 245, 245);
+    color: #000022;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    border-style: dotted;
+    border-width: 0.01rem;
+    border-color: #EE00FF;
+    box-shadow: 0rem 0rem 1rem #EE00FF inset;
+    width: 20%;
+    height: auto;
+}
+
+.PoopC {
+    color: pink;
+}
+
+.Startsbtn {
+    background-color: #000022;
+    border-color: pink;
+    border-style: inset;
+    border-width: 0.2rem;
+    box-shadow: inset 0rem 0rem 1rem rgb(0, 145, 255);
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.BTNDivsStart {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    height: 70%;
+    border-radius: 0.5rem;
+}
+
+.TimerDiv {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.Timer {
+    background-color: aqua;
+    width: 99%;
+}
+
+.CoinStartBTN {
+    background-color: greenyellow;
+    border-style: hidden;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.AMStartBTNCant {
+    background-color: silver;
+    border-style: hidden;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.AMStartBTN {
+    /* background-color: yellow; */
+    background-color: yellow;
+    border-style: hidden;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    width: 50%;
+    padding: 0.5rem;
+}
